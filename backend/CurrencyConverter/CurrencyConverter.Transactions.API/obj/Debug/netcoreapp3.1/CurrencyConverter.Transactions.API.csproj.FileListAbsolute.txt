@@ -1,0 +1,10 @@
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.exe
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.csprojAssemblyReference.cache
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfoInputs.cache
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfo.cs
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.RazorTargetAssemblyInfo.cache
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\staticwebassets\CurrencyConverter.Transactions.API.StaticWebAssets.Manifest.cache
+C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\staticwebassets\CurrencyConverter.Transactions.API.StaticWebAssets.xml

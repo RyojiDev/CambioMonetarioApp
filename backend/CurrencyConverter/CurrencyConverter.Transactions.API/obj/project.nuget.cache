@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4223O+8C4l5Jp5SdNPz/KKaI0D69nE3+vHEGgGKfK//gkPRmXZzi097y6R0FDrpWMmdepiWR1TNRM+CPEA8+Zg==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Transactions.API\\CurrencyConverter.Transactions.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Iesu Sama Aishiteiru\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
