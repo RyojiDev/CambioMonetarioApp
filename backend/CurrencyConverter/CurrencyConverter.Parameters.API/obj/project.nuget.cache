@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SzFOhdRelfPwdHt57T3gbrthpW65//FJApJnMmiVoVSOuTNYOPBPEGSv9HYK8oliTN4lZ9oRIJu5JW5tFCL9lQ==",
+  "dgSpecHash": "MYQ9WHZLYDrwwfU1r9Y1bKl1PxM6U/ihbSiCvbPEU0GDs718VIGRBI7M9Bc6R8Ch88KsdweuWG8yB2N8Pbrdaw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
+  "projectFilePath": "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

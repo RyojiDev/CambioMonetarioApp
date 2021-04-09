@@ -1,15 +1,38 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Container } from 'react-native';
+
+import List from './Components/list';
 import Header from './Components/Header';
+
+import api from '../src/config/api';
 
 const App = () =>{
 
+  const [currency,setCurrency] = React.useState([]);
+  
+  const getCurrency = async () => {
+    try {
+        const response = await api.get("/parameters");
+        console.log(response);
+      
+    } catch (error) {
+        alert("ocorreu um erro ao pesquisar");
+        console.log(error);
+    }
+}
+
+ React.useEffect(() => {
+    //getCurrency();
+  }, [])
+
   const enviar = () =>{
     alert("enviar valores")
-  }
+    getCurrency();
+  } 
   return(
     <View style={estilo.container}>
     <Header></Header>
+    <List></List>
       <Text style={estilo.textInput}>
         Qual valor você deseja fazer deposito?
       </Text>
@@ -30,11 +53,12 @@ const estilo = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'green'
+
   },
   textInput:{
-    fontSize: 14,
-    marginBottom: 20
+    fontSize: 20,
+    marginBottom: 20,
+    color: '#fff'
   },
   inputForm: {
     backgroundColor: '#fff',

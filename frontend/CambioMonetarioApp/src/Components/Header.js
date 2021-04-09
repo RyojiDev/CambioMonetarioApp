@@ -5,7 +5,7 @@ import React from 'react';
 const Header = () =>{
   return (
     <View style={estiloHeader.container}>
-      <Text>Saldo</Text>
+      <Text style={estiloHeader.textSaldo}>Saldo</Text>
     </View>
   )
 }
@@ -16,6 +16,9 @@ const estiloHeader = new StyleSheet.create({
   container: {
     flex: 2,
     flexDirection: 'row',
-    backgroundColor: 'red'
+  },
+  textSaldo: {
+    color: '#fff',
+    fontSize: 20,
   }
 });

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj": {}
+    "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj": {
+    "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
+        "projectUniqueName": "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
         "projectName": "CurrencyConverter.Parameters.API",
-        "projectPath": "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
+        "projectPath": "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\CurrencyConverter.Parameters.API.csproj",
         "packagesPath": "C:\\Users\\Iesu Sama Aishiteiru\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\FrontEnd\\React\\DesafioLabsit\\CambioMonetario\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\obj\\",
+        "outputPath": "D:\\Projetos\\FrontEnd\\React\\CambioMonetarioApp\\backend\\CurrencyConverter\\CurrencyConverter.Parameters.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
