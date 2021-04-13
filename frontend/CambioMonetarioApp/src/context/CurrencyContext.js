@@ -1,14 +1,35 @@
 import React, {createContext, useReducer} from 'react';
-import {getCurrency} from '../service/currencyService';
 
 const CurrencyContext = createContext({})
-const currency = getCurrency();
 export const CurrencyProviders = props => {
-  const initialState = { currency : currency  }
+
+  const initialState = {
+    display: [{value: 0,
+    clearDisplay : false
+    }],
+    operation: null,
+    values: [0,0],
+    current: 0,
+    currency: []
+  }
+
+  const actions = {
+    mudarDisplay(state, action){
+      console.log(action.payload, "essa aqui")
+      const display = action.payload
+      return {
+        ...state,
+        display: [...state.display, display]
+      }
+    },
+    retornarLista(state,action){
+      console.log(action,"recebo a lista")
+    }
+  }
 
 
 function reducer(state, action){
-  console.warn(action)
+ // console.warn(action)
   const fn = actions[action.type]
   return fn ? fn(state, action) : state
 }

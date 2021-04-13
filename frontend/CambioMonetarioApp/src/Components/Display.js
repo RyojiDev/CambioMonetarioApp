@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {StyleSheet,
         Text,
         View
       } from 'react-native';
 import ListCoin from './ListCoin';
 
+import CurrencyContext from '../context/CurrencyContext';
+
+
 const styles = StyleSheet.create({
   display:{
     flex:1,
     padding: 20,
-    backgroundColor: '#506AD4',
+    backgroundColor: props.cor ? props.cor : '#506AD4',
   },
   displayValue: {
     fontSize: 45,
@@ -20,12 +23,14 @@ const styles = StyleSheet.create({
 })
 
 export default props =>{
+  const {state,dispatch} = useContext(CurrencyContext);
+  console.log(state, "bem aqui")
   return(
   <View style={styles.display}>
   
     <Text style={styles.displayValue}
     numberOfLines={1}>
-    <ListCoin />{props.coin} : {props.value}
+    <ListCoin />{props.coin} : {state.display.value}
     </Text>
     
   </View>

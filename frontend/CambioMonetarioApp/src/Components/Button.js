@@ -9,8 +9,8 @@ import {
 const styles = StyleSheet.create({
   button: {
     fontSize: 40,
-    height: Dimensions.get('window').width / 3,
-    width: Dimensions.get('window').width / 3,
+    height: Dimensions.get('window').width / 4,
+    width: Dimensions.get('window').width / 4,
     padding: 20,
     backgroundColor: '#FFFCE6',
     textAlign: 'center',
@@ -29,14 +29,15 @@ const styles = StyleSheet.create({
 })
 
 const  Button = (props) => {
-
+  //console.warn(props)
+  //console.log(props)
   const stylesButton = [styles.button]
 
   if(props.double) stylesButton.push(styles.buttonDouble);
   if(props.triple) stylesButton.push(styles.buttonTriple);
   if(props.operation) stylesButton.push(styles.operationButton)
   return (
-    <TouchableHighlight >
+    <TouchableHighlight onPress={()=> props.onClick(props.label)}>
       <Text style={stylesButton}>
       {props.label}
       </Text>

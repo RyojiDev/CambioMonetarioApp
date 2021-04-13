@@ -5,46 +5,25 @@ import Header from './Components/Header';
 import Display from './Components/Display';
 import { CurrencyProviders } from './context/CurrencyContext'
 
-import api from '../src/config/api';
 
 import {Picker} from '@react-native-picker/picker';
 
-const initialState = {
-  base: null,
-}
+class App extends React.Component{
 
-
-
-const App = (props) =>{
-
-  addDigit = n => {
-    /*console.debug(typeof this.state.displayValue)
-    
-    const clearDisplay = this.state.displayValue === '0'
-      || this.state.clearDisplay
-    
-    if (n === '.' && !clearDisplay 
-      && this.state.displayValue.includes('.')) {
-      return
-    }*/
+  render(){
+    return(
+      <CurrencyProviders> 
+       <View style={estilo.container}>
+         <Display coin="R$" value={0}/>
+         <Display coin="$"  value={0} />
+         <View style={estilo.button}>
+           <Keyboard clicar={this.addDigit}/>
+         </View>
+       </View>
+     </CurrencyProviders>
+     )
   }
-
  
-  const enviar = () =>{
-    getCurrency();
-  } 
-
-  return(
-   <CurrencyProviders> 
-    <View style={estilo.container}>
-      <Display coin="R$" value={0}/>
-      <Display coin="$" value={0} />
-      <View style={estilo.button}>
-        <Keyboard />
-      </View>
-    </View>
-  </CurrencyProviders>
-  )
 }
 
 const estilo = StyleSheet.create({
