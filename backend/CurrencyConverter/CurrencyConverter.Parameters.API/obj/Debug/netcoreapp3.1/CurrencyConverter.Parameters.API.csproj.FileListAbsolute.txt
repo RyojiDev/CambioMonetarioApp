@@ -173,7 +173,6 @@ D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\Currency
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Parameters.API.csprojAssemblyReference.cache
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Parameters.API.AssemblyInfoInputs.cache
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Parameters.API.AssemblyInfo.cs
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Parameters.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Parameters.API.csproj.CoreCompileInputs.cache
