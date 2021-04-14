@@ -31,6 +31,5 @@ namespace CurrencyConverter.Transactions.API.Model
         [Required]
         public decimal Spread { get; set; }
 
-
     }
 }

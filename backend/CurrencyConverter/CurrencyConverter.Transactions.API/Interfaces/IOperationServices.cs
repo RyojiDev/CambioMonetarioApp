@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CurrencyConverter.Transactions.API.Interfaces
 {
-    interface IOperationServices
+    public interface IOperationServices
     {
         List<Operation> GetListOperationTransaction();
 

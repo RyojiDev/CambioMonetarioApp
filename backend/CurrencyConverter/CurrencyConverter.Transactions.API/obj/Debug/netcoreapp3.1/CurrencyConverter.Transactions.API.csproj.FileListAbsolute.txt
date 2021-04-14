@@ -60,3 +60,4 @@ D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\Currency
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.dll
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.pdb
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.genruntimeconfig.cache
+D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.csprojAssemblyReference.cache

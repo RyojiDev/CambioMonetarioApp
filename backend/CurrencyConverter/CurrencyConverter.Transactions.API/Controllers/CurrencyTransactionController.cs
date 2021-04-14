@@ -10,42 +10,39 @@ using System.Threading.Tasks;
 
 namespace CurrencyConverter.Transactions.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class CurrencyTransactionController : ControllerBase
     {
-        private IOperationServices _operationServices = new OperationServices();
+        private IOperationServices _operationServices;
+
+        public CurrencyTransactionController(IOperationServices operationServices)
+        {
+            this._operationServices = operationServices;
+        }
 
         List<Operation> operations = new List<Operation>();
 
+        [HttpGet("ListOperations")]
         public IActionResult ListOperations()
         {
-            try
-            {
-                operations = _operationServices.GetListOperationTransaction();
-                if (operations != null)
-                    return Ok(operations);
-            }catch(Exception ex)
-            {
-                return NotFound(new { Error = ex.Message, Status = HttpStatusCode.NotFound });
-            }
-
+            
+           operations = _operationServices.GetListOperationTransaction();
+             if (operations == null)
+                return NotFound();
+           
             return Ok(operations);
         }
 
-        [HttpPost]
+        [HttpPost("SaveConverted")]
         public IActionResult SaveConvertedCurrency([FromBody]ConvertedCurrency convertedCurrency)
         {
-           
-            try { 
+                 
             convertedCurrency = _operationServices.SaveConvertedCurrency(convertedCurrency);
 
-            if(convertedCurrency != null)
-
-                return Ok(convertedCurrency);
-
-            }catch(Exception ex) {
-
-                return NotFound(new { Error = ex.Message, Status = HttpStatusCode.NotFound });
-            }
+            if (convertedCurrency == null)
+                return NotFound();
+            
             return Ok(convertedCurrency);
         }
     }

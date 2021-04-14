@@ -12,10 +12,11 @@ namespace CurrencyConverter.Transactions.API.Services
     {
         private readonly CurrencyOperationDBContext _context;
 
-        public OperationServices()
+        public OperationServices(CurrencyOperationDBContext context)
         {
-
+            _context = context;
         }
+
         public decimal CalcIofAndSpread(decimal subTotalValue, decimal iof, decimal spread, decimal baseValue)
         {
             decimal iofValue = (subTotalValue / 100) * iof;
@@ -32,40 +33,62 @@ namespace CurrencyConverter.Transactions.API.Services
 
         public List<Operation> GetListOperationTransaction()
         {
-            Operation operation = new Operation();
-            List<Operation> operationsHistoric = _context.Operations.ToList();
-            return operationsHistoric;
+            try { 
+
+                Operation operation = new Operation();
+                List<Operation> operationsHistoric = _context.Operations.ToList();
+
+                return operationsHistoric;
+
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public ConvertedCurrency SaveConvertedCurrency(ConvertedCurrency convertedCurrency)
         {
-            decimal valueSubtotal = ConvertCurrencyValue(convertedCurrency.ValueToconvert, convertedCurrency.BaseValue);
-            decimal getTotalValueBeforeCalcIofAndSpread = CalcIofAndSpread(valueSubtotal, convertedCurrency.IOF, convertedCurrency.Spread, convertedCurrency.BaseValue);
+            try { 
 
-            convertedCurrency.TotalValueConverted = getTotalValueBeforeCalcIofAndSpread;
+                decimal valueSubtotal = ConvertCurrencyValue(convertedCurrency.ValueToconvert, convertedCurrency.BaseValue);
+                decimal getTotalValueBeforeCalcIofAndSpread = CalcIofAndSpread(valueSubtotal, convertedCurrency.IOF, convertedCurrency.Spread, convertedCurrency.BaseValue);
 
-            SaveOperationTransaction(convertedCurrency);
+                convertedCurrency.TotalValueConverted = getTotalValueBeforeCalcIofAndSpread;
 
-            var saveConvertedCurrency = _context.Add(convertedCurrency).Entity;
-            _context.SaveChanges();
+                SaveOperationTransaction(convertedCurrency);
 
-            return saveConvertedCurrency;
+                var saveConvertedCurrency = _context.Add(convertedCurrency).Entity;
+                _context.SaveChanges();
+
+                return saveConvertedCurrency;
+
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public void SaveOperationTransaction(ConvertedCurrency convertedCurrency)
         {
-            Operation operation = new Operation()
+            try
             {
-                FromCoin = convertedCurrency.FromCoin,
-                ToCoin = convertedCurrency.ToCoin,
-                IOF = convertedCurrency.IOF,
-                OperationDate = DateTime.Now,
-                OperationValue = convertedCurrency.TotalValueConverted.Value,
-                Spread = convertedCurrency.Spread
-            };
+                Operation operation = new Operation()
+                {
+                    FromCoin = convertedCurrency.FromCoin,
+                    ToCoin = convertedCurrency.ToCoin,
+                    IOF = convertedCurrency.IOF,
+                    OperationDate = DateTime.Now,
+                    OperationValue = convertedCurrency.TotalValueConverted.Value,
+                    Spread = convertedCurrency.Spread
+                };
 
-            var saveOperation = _context.Add(operation);
-            _context.SaveChanges();
+                var saveOperation = _context.Add(operation);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

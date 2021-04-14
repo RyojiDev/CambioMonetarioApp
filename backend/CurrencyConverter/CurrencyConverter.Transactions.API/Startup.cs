@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CurrencyConverter.Transactions.API.Interfaces;
 using CurrencyConverter.Transactions.API.Repository;
+using CurrencyConverter.Transactions.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +39,8 @@ namespace CurrencyConverter.Transactions.API
 );
             services.AddDbContext<CurrencyOperationDBContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("SqlServerConnect")));
+
+            services.AddTransient<IOperationServices, OperationServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +50,6 @@ namespace CurrencyConverter.Transactions.API
             {
                 app.UseDeveloperExceptionPage();
             }
-
 
             app.UseHttpsRedirection();
 
