@@ -1,5 +1,6 @@
 ﻿using CurrencyConverter.Transactions.API.Interfaces;
 using CurrencyConverter.Transactions.API.Model;
+using CurrencyConverter.Transactions.API.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,24 +10,62 @@ namespace CurrencyConverter.Transactions.API.Services
 {
     public class OperationServices : IOperationServices
     {
-        public void CalcIofAndSpread(decimal valueOperation)
+        private readonly CurrencyOperationDBContext _context;
+
+        public OperationServices()
         {
-            throw new NotImplementedException();
+
+        }
+        public decimal CalcIofAndSpread(decimal subTotalValue, decimal iof, decimal spread, decimal baseValue)
+        {
+            decimal iofValue = (subTotalValue / 100) * iof;
+            decimal spreadValue = ((baseValue / 100) * spread) * subTotalValue;
+            decimal totalValueForPay = iofValue + spreadValue + subTotalValue;
+
+            return totalValueForPay;          
         }
 
-        public ConvertedCurrency ConvertCoinOperation(string coinType)
+        public decimal ConvertCurrencyValue(decimal valueToConverted, decimal baseValue)
         {
-            throw new NotImplementedException();
+            return baseValue * valueToConverted;
         }
 
-        public List<OperationHistoric> GetListOperationTransaction()
+        public List<Operation> GetListOperationTransaction()
         {
-            throw new NotImplementedException();
+            Operation operation = new Operation();
+            List<Operation> operationsHistoric = _context.Operations.ToList();
+            return operationsHistoric;
         }
 
-        public ConvertedCurrency SaveOperationTransaction(OperationHistoric operationHistoric)
+        public ConvertedCurrency SaveConvertedCurrency(ConvertedCurrency convertedCurrency)
         {
-            throw new NotImplementedException();
+            decimal valueSubtotal = ConvertCurrencyValue(convertedCurrency.ValueToconvert, convertedCurrency.BaseValue);
+            decimal getTotalValueBeforeCalcIofAndSpread = CalcIofAndSpread(valueSubtotal, convertedCurrency.IOF, convertedCurrency.Spread, convertedCurrency.BaseValue);
+
+            convertedCurrency.TotalValueConverted = getTotalValueBeforeCalcIofAndSpread;
+
+            SaveOperationTransaction(convertedCurrency);
+
+            var saveConvertedCurrency = _context.Add(convertedCurrency).Entity;
+            _context.SaveChanges();
+
+            return saveConvertedCurrency;
+        }
+
+        public void SaveOperationTransaction(ConvertedCurrency convertedCurrency)
+        {
+            Operation operation = new Operation()
+            {
+                FromCoin = convertedCurrency.FromCoin,
+                ToCoin = convertedCurrency.ToCoin,
+                IOF = convertedCurrency.IOF,
+                OperationDate = DateTime.Now,
+                OperationValue = convertedCurrency.TotalValueConverted.Value,
+                Spread = convertedCurrency.Spread
+            };
+
+            var saveOperation = _context.Add(operation);
+            _context.SaveChanges();
         }
     }
 }

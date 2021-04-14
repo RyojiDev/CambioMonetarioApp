@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CurrencyConverter.Transactions.API.Model
 {
-    public class OperationHistoric
+    public class Operation
     {
         [Key]
         public int Id { get; set; }
@@ -24,5 +24,13 @@ namespace CurrencyConverter.Transactions.API.Model
 
         [Required]
         public DateTime OperationDate { get; set; }
+
+        [Required]
+        public decimal IOF { get; set; }
+
+        [Required]
+        public decimal Spread { get; set; }
+
+
     }
 }

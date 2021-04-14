@@ -4,14 +4,16 @@ using CurrencyConverter.Transactions.API.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CurrencyConverter.Transactions.API.Migrations
 {
     [DbContext(typeof(CurrencyOperationDBContext))]
-    partial class CurrencyOperationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210414040649_addConvertedCurrencyAndRenameOperation")]
+    partial class addConvertedCurrencyAndRenameOperation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,9 +27,6 @@ namespace CurrencyConverter.Transactions.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<decimal>("BaseValue")
-                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("FromCoin")
                         .IsRequired()
@@ -45,10 +44,7 @@ namespace CurrencyConverter.Transactions.API.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<decimal?>("TotalValueConverted")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("ValueToconvert")
+                    b.Property<decimal>("Value")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");

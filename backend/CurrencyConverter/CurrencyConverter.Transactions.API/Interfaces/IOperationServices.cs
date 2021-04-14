@@ -8,13 +8,13 @@ namespace CurrencyConverter.Transactions.API.Interfaces
 {
     interface IOperationServices
     {
-        List<OperationHistoric> GetListOperationTransaction();
+        List<Operation> GetListOperationTransaction();
 
-        void SaveOperationTransaction(OperationHistoric operationHistoric);
+        void SaveOperationTransaction(ConvertedCurrency convertedCurrency);
 
-        ConvertedCurrency ConvertCoinOperation(string coinType);
+        decimal CalcIofAndSpread(decimal subTotalValue, decimal iof, decimal spread, decimal baseValue);
 
-        void CalcIofAndSpread(decimal valueOperation);
+        decimal ConvertCurrencyValue(decimal valueToConverted, decimal baseValue);
 
         ConvertedCurrency SaveConvertedCurrency(ConvertedCurrency convertedCurrency);
 

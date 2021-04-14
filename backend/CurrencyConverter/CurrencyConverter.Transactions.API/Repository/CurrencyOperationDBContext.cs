@@ -14,6 +14,8 @@ namespace CurrencyConverter.Transactions.API.Repository
                 
         }
 
-        public DbSet<OperationHistoric> OperationsHistorics { get; set; }
+        public DbSet<Operation> Operations { get; set; }
+
+        public DbSet<ConvertedCurrency> Currency { get; set; }
     }
 }

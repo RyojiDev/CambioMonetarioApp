@@ -1,13 +1,3 @@
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.exe
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.csprojAssemblyReference.cache
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfoInputs.cache
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfo.cs
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.RazorTargetAssemblyInfo.cache
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\staticwebassets\CurrencyConverter.Transactions.API.StaticWebAssets.Manifest.cache
-C:\Users\Mateus\source\repos\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\staticwebassets\CurrencyConverter.Transactions.API.StaticWebAssets.xml
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.exe
@@ -58,7 +48,6 @@ D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\Currency
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.csprojAssemblyReference.cache
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfoInputs.cache
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.AssemblyInfo.cs
 D:\Projetos\FrontEnd\React\CambioMonetarioApp\backend\CurrencyConverter\CurrencyConverter.Transactions.API\obj\Debug\netcoreapp3.1\CurrencyConverter.Transactions.API.csproj.CoreCompileInputs.cache
