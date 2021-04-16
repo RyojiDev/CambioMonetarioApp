@@ -1,0 +1,93 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:E. South America Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN=ryojikitanodev@gmail.com;RSVP=TRUE:mailto:ryojikitanodev@gmail.
+	com
+ATTENDEE;CN=Hudson.Silva@btgpactual.com:invalid:nomail
+ATTENDEE;CN=raphaell.bosi@btgpactual.com:invalid:nomail
+ATTENDEE;CN=felipe.guimaraes@btgpactual.com:invalid:nomail
+ATTENDEE;CN=douglasmendescastro@gmail.com;ROLE=OPT-PARTICIPANT:invalid:noma
+	il
+ATTENDEE;CN=lcampos@realtask.com.br;ROLE=OPT-PARTICIPANT:invalid:nomail
+ATTENDEE;CN=alfredo.silva@realtask.com.br;ROLE=OPT-PARTICIPANT:invalid:noma
+	il
+ATTENDEE;CN=douglas.mendes@realtask.com.br;ROLE=OPT-PARTICIPANT:invalid:nom
+	ail
+ATTENDEE;CN="Lucio Campos";ROLE=OPT-PARTICIPANT:invalid:nomail
+CLASS:PUBLIC
+CREATED:20210415T154808Z
+DESCRIPTION:Você está convidado a entrar em uma reunião do Microsoft Tea
+	ms\n\nTítulo: Entrevista Full Stack - Real Task - Ryoji \nHora: 15 de abr
+	 de 2021 19:00:00\n\nEntrar no seu computador ou aplicativo móvel\nClique
+	 aqui para entrar na reunião <https://teams.microsoft.com/l/meetup-join/1
+	9%3ameeting_MWNlZGViZWYtNjkxZi00ZTcxLTkyNGQtNmY2YzgxMThiZDNh%40thread.v2/0
+	?context=%7b%22Tid%22%3a%2226930823-e9ec-4cd6-b560-49940e688528%22%2c%22Oi
+	d%22%3a%222c3013e2-a153-402b-bf65-9db5d353ba11%22%7d> \n\n
+DTEND;TZID="E. South America Standard Time":20210415T200000
+DTSTAMP:20210415T154808Z
+DTSTART;TZID="E. South America Standard Time":20210415T190000
+LAST-MODIFIED:20210415T154808Z
+ORGANIZER;CN=douglas.mendes@realtask.com.br:mailto:douglas.mendes@realtask.
+	com.br
+PRIORITY:1
+SEQUENCE:2
+SUMMARY;LANGUAGE=pt-br:Entrevista Full Stack - Real Task - Ryoji 
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000E00678223831D701000000000000000
+	010000000B8DF5DC02C6F0745A778751F76A0690C
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml" 
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-mic
+	rosoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/
+	12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Co
+	ntent-Type content="text/html\; charset=iso-8859-1"><meta name=Generator c
+	ontent="Microsoft Word 15 (filtered medium)"><style><!--\n/* Font Definiti
+	ons */\n@font-face\n	{font-family:"Cambria Math"\;\n	panose-1:2 4 5 3 5 4 
+	6 3 2 4\;}\n@font-face\n	{font-family:Calibri\;\n	panose-1:2 15 5 2 2 2 4 
+	3 2 4\;}\n/* Style Definitions */\np.MsoNormal\, li.MsoNormal\, div.MsoNor
+	mal\n	{margin:0cm\;\n	font-size:11.0pt\;\n	font-family:"Calibri"\,sans-ser
+	if\;\n	mso-fareast-language:EN-US\;}\na:link\, span.MsoHyperlink\n	{mso-st
+	yle-priority:99\;\n	color:#0563C1\;\n	text-decoration:underline\;}\nspan.E
+	stiloDeEmail18\n	{mso-style-type:personal-compose\;\n	font-family:"Calibri
+	"\,sans-serif\;\n	color:windowtext\;}\n.MsoChpDefault\n	{mso-style-type:ex
+	port-only\;\n	font-size:10.0pt\;}\n@page WordSection1\n	{size:612.0pt 792.
+	0pt\;\n	margin:70.85pt 3.0cm 70.85pt 3.0cm\;}\ndiv.WordSection1\n	{page:Wo
+	rdSection1\;}\n--></style><!--[if gte mso 9]><xml>\n<o:shapedefaults v:ext
+	="edit" spidmax="1026" />\n</xml><![endif]--><!--[if gte mso 9]><xml>\n<o:
+	shapelayout v:ext="edit">\n<o:idmap v:ext="edit" data="1" />\n</o:shapelay
+	out></xml><![endif]--></head><body lang=PT-BR link="#0563C1" vlink="#954F7
+	2" style='word-wrap:break-word'><div class=WordSection1><p class=MsoNormal
+	><b>Você está convidado a entrar em uma reunião do Microsoft Teams</b><
+	br><br>Título: Entrevista Full Stack - Real Task - Ryoji <br>Hora: 15 de 
+	abr de 2021 19:00:00<br><br>Entrar no seu computador ou aplicativo móvel<
+	br><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWNlZGV
+	iZWYtNjkxZi00ZTcxLTkyNGQtNmY2YzgxMThiZDNh%40thread.v2/0?context=%7b%22Tid%
+	22%3a%2226930823-e9ec-4cd6-b560-49940e688528%22%2c%22Oid%22%3a%222c3013e2-
+	a153-402b-bf65-9db5d353ba11%22%7d">Clique aqui para entrar na reunião</a>
+	<o:p></o:p></p></div></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:2
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-APPTLASTSEQUENCE:1
+X-MS-OLK-APPTSEQTIME:20210414T171443Z
+X-MS-OLK-AUTOSTARTCHECK:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+

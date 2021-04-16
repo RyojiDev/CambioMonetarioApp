@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Parameters.API", "CurrencyConverter.Parameters.API\CurrencyConverter.Parameters.API.csproj", "{020D7CD4-914E-4536-8EF0-A30ACC76914B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Parameters.API", "CurrencyConverter.Parameters.API\CurrencyConverter.Parameters.API.csproj", "{020D7CD4-914E-4536-8EF0-A30ACC76914B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Transactions.API", "CurrencyConverter.Transactions.API\CurrencyConverter.Transactions.API.csproj", "{3A8C770C-AB54-4BC9-B550-04B6C46D93B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyConverter.Transactions.API", "CurrencyConverter.Transactions.API\CurrencyConverter.Transactions.API.csproj", "{3A8C770C-AB54-4BC9-B550-04B6C46D93B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCurrencyConverterXunitTests", "ApiCurrencyConverterXunitTests\ApiCurrencyConverterXunitTests.csproj", "{3391CA3C-D95E-44C7-B50C-8781103A1B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3A8C770C-AB54-4BC9-B550-04B6C46D93B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A8C770C-AB54-4BC9-B550-04B6C46D93B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8C770C-AB54-4BC9-B550-04B6C46D93B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3391CA3C-D95E-44C7-B50C-8781103A1B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3391CA3C-D95E-44C7-B50C-8781103A1B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3391CA3C-D95E-44C7-B50C-8781103A1B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3391CA3C-D95E-44C7-B50C-8781103A1B19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

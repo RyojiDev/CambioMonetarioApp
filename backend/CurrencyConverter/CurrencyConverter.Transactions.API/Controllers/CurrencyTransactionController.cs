@@ -24,14 +24,14 @@ namespace CurrencyConverter.Transactions.API.Controllers
         List<Operation> operations = new List<Operation>();
 
         [HttpGet("ListOperations")]
-        public IActionResult ListOperations()
+        public ActionResult<List<Operation>> ListOperations()
         {
             
            operations = _operationServices.GetListOperationTransaction();
              if (operations == null)
                 return NotFound();
            
-            return Ok(operations);
+            return operations;
         }
 
         [HttpPost("SaveConverted")]
